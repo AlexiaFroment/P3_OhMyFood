@@ -1,0 +1,28 @@
+//**Header**/
+header {
+  @include flexMid;
+  height: 70px;
+  .logo__head {
+    width: 180px;
+    height: 34px;
+    object-fit: contain;
+  }
+}
+@include tablet {
+  header {
+    height: 90px;
+    .logo__head {
+      width: 234px;
+      height: 45px;
+    }
+  }
+}
+@include desktop {
+  header {
+    height: 118px;
+    .logo__head {
+      width: 304px;
+      height: 59px;
+    }
+  }
+}

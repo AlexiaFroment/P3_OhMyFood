@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohmyfood</title>
+    <link rel="stylesheet" href="sass/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family= Shrikhand & display = swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family= Roboto :wght@500 & display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="https://kit.fontawesome.com/4f932ada6e.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="main_cont">
+        <div class="loader">
+            <span class="loader__patience"> Patience, plein de bonnes choses à venir ...</span> <br>
+            <div class="loader__load">
+                <div class="loader__load__round load__round--1 items1"></div>
+                <div class="loader__load__round load__round--2 items2"></div>
+                <div class="loader__load__round load__round--3 items3"></div>
+                <div class="loader__load__round load__round--4 items4"></div>
+                <div class="loader__load__round load__round--5 items5"></div>
+            </div>
+        </div>
+        <header>
+            <img class="logo__head" src="images/logo/ohmyfood.png" alt="logo">
+        </header>
+
+
+        <main>
+            <div id="search">
+                <i class="fa-sharp fa-solid fa-location-dot search__icn"></i>
+                <input type="search" class="search__place" placeholder="Paris, Belleville" size="14">
+            </div>
+
+
+            <div id="pres">
+                <h2 class="pres__title">Réservez le menu qui vous convient</h2>
+                <span class="pres__subtitle">Découvrez des restaurants d'exception, sélectionnés par nos
+                    soins.</span>
+                <button class="pres__btn">Explorez nos restaurants</button>
+            </div>
+
+            <!--FUNCTION-->
+            <div id="function">
+                <h2 class="funtitle">Fonctionnement</h2>
+                <!--FUNCARD1-->
+                <div class="funcard">
+                    <button class="funcard__btn">1</button>
+                    <i class="funcard__icn fa-sharp fa-solid fa-mobile-screen-button"></i>
+                    <h3 class="funcard__title">Choisissez un restaurant</h3>
+                </div>
+                <!--FUNCARD2-->
+                <div class="funcard">
+                    <button class="funcard__btn">2</button>
+                    <i class="funcard__icn fa-sharp fa-solid fa-list-ul"></i>
+                    <h3 class="funcard__title">Composez votre menu</h3>
+                </div>
+                <!--FUNCARD3-->
+                <div class="funcard">
+                    <button class="funcard__btn">3</button>
+                    <i class="funcard__icn fa-sharp fa-solid fa-store"></i>
+                    <h3 class="funcard__title">Dégustez au restaurant</h3>
+                </div>
+            </div>
+
+            <!--RESTAU-->
+            <div id="restau">
+                <h2 class="restitle">Restaurants</h2>
+                <div class="restau__pres">
+                    <!--RESTCARD1-->
+                    <div class="restcard">
+                        <picture>
+                            <source media="(min-width: 992px)"
+                                srcset="images/restaurants/La-palette-du-goût_Desktop.jpg">
+                            <source media="(min-width: 768px)"
+                                srcset="images/restaurants/La-palette-du-goût_Tablet.jpg">
+                            <source media="(min-width: 300px)" srcset="images/restaurants/La-palette-du-goût_Mobil.jpg">
+                            <img class="restcard__img1" src="images/restaurants/La-palette-du-goût_Desktop.jpg"
+                                alt="La palette du goût">
+                        </picture>
+                        <button class="restcard__btn">Nouveau</button>
+                        <div class="restcard__desc">
+                            <h3 class="restcard__desc__title"> La palette du goût</h3>
+                            <span class="restcard__desc__place">Ménilmontant</span>
+                            <span class="restcard__desc__icn">
+                                &hearts;
+                            </span>
+                        </div>
+                    </div>
+                    <!--RESTCARD2-->
+                    <div class="restcard">
+                        <picture>
+                            <source media="(min-width: 992px)"
+                                srcset="images/restaurants/La-note-enchantée_Desktop.jpg">
+                            <source media="(min-width: 768px)" srcset="images/restaurants/La-note-enchantée_Tablet.jpg">
+                            <source media="(min-width: 300px)" srcset="images/restaurants/La-note-enchantée_Mobil.jpg">
+                            <img class="restcard__img1" src="images/restaurants/La-note-enchantée_Desktop.jpg"
+                                alt="La note enchantée">
+                        </picture>
+                        <button class="restcard__btn">Nouveau</button>
+                        <div class="restcard__desc">
+                            <h3 class="restcard__desc__title"> La note enchantée</h3>
+                            <span class="restcard__desc__place">Charonne</span>
+                            <span class="restcard__desc__icn">
+                                &hearts;
+                            </span>
+                        </div>
+                    </div>
+                    <!--RESTCARD3-->
+                    <div class="restcard">
+                        <a href="index_a-la-française.html">
+                            <picture>
+                                <source media="(min-width: 992px)"
+                                    srcset="images/restaurants/A-la-Française_Desktop.jpg">
+                                <source media="(min-width: 768px)"
+                                    srcset="images/restaurants/A-la-Française_Tablet.jpg">
+                                <source media="(min-width: 300px)" srcset="images/restaurants/A-la-Française_Mobil.jpg">
+                                <img class="restcard__img2" src="images/restaurants/A-la-Française_Desktop.jpg"
+                                    alt="A la française">
+                            </picture>
+                        </a>
+                        <div class="restcard__desc">
+                            <a href="index_a-la-française.html">
+                                <h3 class="restcard__desc__title">&#192 la française</h3>
+                            </a>
+                            <span class="restcard__desc__place">Cité Rouge</span>
+                            <span class="restcard__desc__icn">
+                                &hearts;
+                            </span>
+                        </div>
+                    </div>
+                    <!--RESTCARD4-->
+                    <div class="restcard">
+                        <picture>
+                            <source media="(min-width: 992px)"
+                                srcset="images/restaurants/Le-délice-des-sens_Desktop.jpg">
+                            <source media="(min-width: 768px)"
+                                srcset="images/restaurants/Le-délice-des-sens_Tablet.jpg">
+                            <source media="(min-width: 300px)" srcset="images/restaurants/Le-délice-des-sens_Mobil.jpg">
+                            <img class="restcard__img2" src="images/restaurants/Le-délice-des-sens_Desktop.jpg"
+                                alt="Le délice des sens">
+                        </picture>
+                        <div class="restcard__desc">
+                            <h3 class="restcard__desc__title">Le délice des sens</h3>
+                            <span class="restcard__desc__place">Folie-Méricourt</span>
+                            <span class="restcard__desc__icn">
+                                &hearts;
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </main>
+        <footer>
+            <div id="footer">
+                <img class="footer__logo" src="images/logo/ohmyfood@2x.svg" alt="logo"><br>
+                <i class="footer__icn fa-sharp fa-solid fa-utensils"></i>
+                <span class="footer__link"> Proposer un restaurant</span><br>
+                <i class="footer__icn fa-sharp fa-solid fa-handshake"></i>
+                <span class="footer__link"> Devenir partenaire</span><br>
+                <span class="footer__link">Mention légale</span><br>
+                <a href="mailto:aloacmoi@gmail.com"><span class="footer__link">Contact</span><br></a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+@mixin flexMid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flexCol {
+  display: flex;
+  flex-direction: column;
+}
+@mixin hidden {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

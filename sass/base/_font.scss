@@ -1,0 +1,36 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+$h1-size: 25px 30px 40px;
+//**!$h1-size: (@include xs: 25px, @include medium: 30px, @include desktop: 40px,);**/
+h1 {
+  font-family: "Shrikhand", cursive;
+  padding: 20px 0 15px 12px;
+  word-spacing: -0.3em;
+  font-size: 1.6rem;
+  //**!@include xs {font-size: nth($h1-size, 1);}**/
+}
+
+h2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.5rem;
+  padding: 5px 0 0 12px;
+  margin-bottom: 7px;
+}
+h3 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1rem;
+  word-spacing: -0.1em;
+  margin: 0px;
+  padding: 0px 0 5px 0;
+}
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.94rem;
+  padding: 15px 0 10px 12px;
+  margin: 0;
+}

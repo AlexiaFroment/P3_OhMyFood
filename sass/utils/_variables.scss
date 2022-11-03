@@ -1,0 +1,24 @@
+//**Color**/
+$cl-primary: #9356dc;
+$cl-primary-dark: darken($cl-primary, 20%);
+$cl-secondary: #ff79da;
+$cl-secondary-dark: darken($cl-secondary, 20%);
+$cl-tertiary: #99e2d0;
+
+//**Background**/
+$bg-section: linear-gradient(#f3f3f3, #e6e6e6);
+$bg-btn: linear-gradient(to bottom right, $cl-secondary, $cl-primary);
+$bg-btn-dark: linear-gradient(
+  to bottom right,
+  $cl-secondary-dark,
+  $cl-primary-dark
+);
+
+//**Box-shadows**/
+$bs-card: 3px 3px 5px rgb(164, 164, 164);
+$bs-btn: 2px 3px 3px #7c46bd;
+
+//**Border-radius**/
+$br-round: 50px;
+$br-card: 15px;
+$br-demicard: 15px 15px 0 0;

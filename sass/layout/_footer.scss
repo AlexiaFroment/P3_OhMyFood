@@ -1,0 +1,68 @@
+//**Footer**/
+#footer {
+  background: rgb(55, 55, 55);
+  padding: 15px 0 15px 12px;
+}
+.footer__logo {
+  filter: brightness(0) invert(1);
+  width: 99px;
+  height: 19px;
+  object-fit: contain;
+  margin: 10px 0 15px 0;
+}
+.footer__icn {
+  color: white;
+  font-size: 14px;
+}
+.footer__link {
+  color: white;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+//**Responsive design**/
+@include medium {
+  #footer {
+    padding: 15px 0 15px 30px;
+  }
+  .footer__logo {
+    width: 109px;
+    height: 21px;
+    object-fit: contain;
+    margin: 10px 0 15px 0;
+  }
+  .footer__icn {
+    font-size: 16px;
+  }
+  .footer__link {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+@include tablet {
+  .footer__logo {
+    width: 131px;
+    height: 25px;
+  }
+  .footer__icn {
+    font-size: 18px;
+  }
+  .footer__link {
+    font-size: 18px;
+  }
+}
+@include desktop {
+  #footer {
+    padding: 15px 0 15px 40px;
+  }
+  .footer__logo {
+    width: 157px;
+    height: 30px;
+  }
+  .footer__icn {
+    font-size: 20px;
+  }
+  .footer__link {
+    font-size: 20%px;
+  }
+}
