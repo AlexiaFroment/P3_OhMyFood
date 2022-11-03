@@ -91,11 +91,14 @@
   padding: 0;
 }
 
-/**Mobil first-Breakpoint 320 à 576px**/
-body {
-  margin: 0px;
+#main_cont {
+  min-width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+/**Mobil first-Breakpoint 320 à 576px**/
 #main_cont {
   min-width: 320px;
   height: auto;
@@ -104,6 +107,7 @@ body {
 }
 
 /**MédiaQueries Main_page**/
+/**!Mobil petit à moyen - Breakpoint 577 à 767px**/
 @media screen and (min-width: 577px) {
   #main_cont {
     min-width: auto;
@@ -255,7 +259,7 @@ h4 {
     font-size: 20% px;
   }
 }
-@media screen and (min-width: 577px) {
+@media screen and (min-width: 768px) {
   h4 {
     padding: 0 0 10px 0;
   }
@@ -329,7 +333,7 @@ main {
 }
 @media screen and (min-width: 992px) {
   .presentation__img {
-    height: 700px;
+    height: 550px;
     -o-object-position: center;
        object-position: center;
   }
@@ -372,14 +376,8 @@ main {
 @media screen and (min-width: 768px) {
   .menu {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
     padding: 0 20px 0 20px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .menu {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
   }
 }
 .menu__title {
@@ -443,14 +441,11 @@ main {
 }
 @media screen and (min-width: 768px) {
   .card {
-    width: 93%;
-    height: 70px;
     margin: 16px auto;
   }
 }
 @media screen and (min-width: 992px) {
   .card {
-    width: 93%;
     height: 80px;
   }
 }

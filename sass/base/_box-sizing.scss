@@ -3,19 +3,23 @@
   margin: 0;
   padding: 0;
 }
-/**Mobil first-Breakpoint 320 à 576px**/
-body {
-  margin: 0px;
+#main_cont {
+  min-width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+//**! A incorporer**/
+/**Mobil first-Breakpoint 320 à 576px**/
 #main_cont {
   min-width: 320px;
   height: auto;
   margin-left: auto;
   margin-right: auto;
 }
-
 /**MédiaQueries Main_page**/
-//**!Mobil petit à moyen - Breakpoint 577 à 767px**/
+/**!Mobil petit à moyen - Breakpoint 577 à 767px**/
 @media screen and (min-width: 577px) {
   #main_cont {
     min-width: auto;
@@ -35,9 +39,6 @@ body {
     padding: 2px 0 6px 0;
     word-spacing: -0.2em;
   }
-  //**Fonctionnement**/
-
-  //**Restaurants**/
 }
 /**Tablet - Breakpoint 768 à 991px**/
 @media screen and (min-width: 768px) {
@@ -46,13 +47,6 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  //**Header**/
-
-  //**Presentation**/
-
-  //**Fonctionnement**/
-
-  //**Restaurants**/
 }
 /**Desktop petit à moyen - Breakpoint 992 à 1440px**/
 @media screen and (min-width: 992px) {
@@ -68,11 +62,5 @@ body {
     font-size: 30px;
     padding: 15px 0 15px 40px;
   }
-  //**Header**/
-
-  //**Presentation**/
-
-  //**Fonctionnement**/
-
-  //**Restaurants**/
 }
+
