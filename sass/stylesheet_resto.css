@@ -340,7 +340,7 @@ main {
 }
 #cart {
   width: 100%;
-  border-radius: 15px 15px 0 0;
+  border-radius: 30px 30px 0 0;
   position: relative;
   top: -40px;
   background: linear-gradient(#f3f3f3, #e6e6e6);
@@ -466,7 +466,7 @@ main {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-size: 12px;
+  font-size: 0.9rem;
 }
 
 .card__price {
@@ -532,4 +532,4 @@ main {
     width: 155px;
     height: 42px;
   }
-}/*# sourceMappingURL=stylesheet_a-la-francaise.css.map */
+}/*# sourceMappingURL=stylesheet_resto.css.map */
