@@ -11,7 +11,7 @@
   100% {
     transform: translate(0% 100%);
     opacity: 0;
-    z-index: 0;
+    z-index: -1;
   }
 }
 @keyframes loader {
@@ -26,7 +26,7 @@
   100% {
     transform: translate(0% 100%);
     opacity: 0;
-    z-index: 0;
+    z-index: -1;
   }
 }
 @-webkit-keyframes round {
@@ -71,18 +71,18 @@
 }
 @-webkit-keyframes icn_check {
   from {
-    transform: rotate -260deg;
+    transform: rotate(0deg);
   }
   to {
-    transform: rotate 0deg;
+    transform: rotate(180deg);
   }
 }
 @keyframes icn_check {
   from {
-    transform: rotate -260deg;
+    transform: rotate(0deg);
   }
   to {
-    transform: rotate 0deg;
+    transform: rotate(180deg);
   }
 }
 * {
@@ -469,12 +469,6 @@ main {
   font-size: 12px;
 }
 
-.card__price:hover > .card__price__icn > .fa-circle-check {
-  font-size: 30px;
-  -webkit-animation: icn_check 3s ease-in-out;
-          animation: icn_check 3s ease-in-out;
-}
-
 .card__price {
   display: flex;
   align-items: flex-end;
@@ -497,18 +491,17 @@ main {
   margin-right: -50px;
 }
 .card__price i {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 900;
   color: white;
 }
-.card__price:hover {
+.card__price:hover > .card__price__icn {
   cursor: pointer;
-}
-.card__price:hover .card__price__icn {
   margin-right: 0px;
 }
-.card__price:hover > i {
-  font-size: 30px;
+.card__price:hover > .card__price__icn > i {
+  -webkit-animation: icn_check 300ms ease-in-out;
+          animation: icn_check 300ms ease-in-out;
 }
 
 .cmd {
