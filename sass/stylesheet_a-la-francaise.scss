@@ -195,11 +195,9 @@ main {
     font-size: 12px;
   }
 }
-
 .card__price {
   display: flex;
   align-items: flex-end;
-  overflow: hidden;
   &__details {
     font-size: 15px;
     font-weight: bolder;
@@ -222,7 +220,6 @@ main {
   &:hover > .card__price__icn {
     cursor: pointer;
     margin-right: 0px;
-
     & > i {
       animation: icn_check 300ms ease-in-out;
     }

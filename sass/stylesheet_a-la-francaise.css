@@ -472,7 +472,6 @@ main {
 .card__price {
   display: flex;
   align-items: flex-end;
-  overflow: hidden;
 }
 .card__price__details {
   font-size: 15px;
