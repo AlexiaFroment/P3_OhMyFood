@@ -6,8 +6,50 @@
 @import "components/breakpoints";
 @import "layout/footer";
 
-@include tablet {
+//**Fonts-Responsive**/
+@include medium {
+  h1 {
+    font-size: 1.875rem;
+    padding-bottom: 20px;
+  }
+  h2 {
+    font-size: 1.625rem;
+    padding: 15px 0 15px 30px;
+  }
+  h3 {
+    font-size: 1.2rem;
+    padding: 2px 0 6px 0;
+    word-spacing: -0.2em;
+  }
   h4 {
+    font-size: 1rem;
+    padding: 15px 0 10px 12px;
+  }
+}
+@include tablet {
+  h1 {
+    font-size: 1.7rem;
+    padding-bottom: 40px;
+  }
+  h3 {
+    font-size: 1rem;
+    padding: 2px 0 6px 0;
+    word-spacing: -0.2em;
+  }
+  h4 {
+    padding: 0 0 10px 0;
+  }
+}
+@include desktop {
+  h1 {
+    font-size: 1.875rem;
+    padding-bottom: 50px;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  h4 {
+    font-size: 1.2rem;
     padding: 0 0 10px 0;
   }
 }
@@ -192,7 +234,17 @@ main {
   }
   &__subtitle {
     @include hidden;
+    font-size: 0.8rem;
+  }
+}
+@include medium {
+  .card__info__subtitle {
     font-size: 0.9rem;
+  }
+}
+@include desktop {
+  .card__info__subtitle {
+    font-size: 1rem;
   }
 }
 .card__price {
@@ -233,10 +285,10 @@ main {
     border: none;
     border-radius: $br-round;
     color: white;
-    font-size: 16px;
+    font-size: 1rem;
     background: $bg-btn;
     box-shadow: $bs-btn;
-    margin-top: 10px;
+    margin: 30px;
     transform: scale(1);
     animation: transform 1s ease-in-out;
     &:hover {
@@ -248,8 +300,22 @@ main {
 
   @include medium {
     .cmd__btn {
-      width: 155px;
-      height: 42px;
+      width: 170px;
+      height: 40px;
+      font-size: 1.1rem;
+    }
+  }
+  @include tablet {
+    .cmd__btn {
+      width: 194px;
+      height: 45px;
+      font-size: 1.2rem;
+    }
+  }
+  @include desktop {
+    .cmd__btn {
+      width: 224px;
+      font-size: 1.3rem;
     }
   }
 }
