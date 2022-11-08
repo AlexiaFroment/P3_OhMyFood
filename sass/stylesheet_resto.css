@@ -50,7 +50,10 @@
 }
 @-webkit-keyframes fading {
   0% {
-    transform: translateY(50%);
+    transform: translateY(200%);
+    opacity: 0;
+  }
+  50% {
     opacity: 0;
   }
   100% {
@@ -60,7 +63,10 @@
 }
 @keyframes fading {
   0% {
-    transform: translateY(50%);
+    transform: translateY(200%);
+    opacity: 0;
+  }
+  50% {
     opacity: 0;
   }
   100% {
@@ -406,20 +412,24 @@ main {
   margin: 8px auto;
   padding-left: 10px;
   box-shadow: 3px 3px 5px rgb(164, 164, 164);
-  -webkit-animation: fading 1500ms 1s both;
-          animation: fading 1500ms 1s both;
+  -webkit-animation: fading 1000ms 500ms backwards ease-in-out;
+          animation: fading 1000ms 500ms backwards ease-in-out;
 }
-.card:nth-child(1) {
-  -webkit-animation-delay: 300ms;
-          animation-delay: 300ms;
+.card--1 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
-.card:nth-child(2) {
-  -webkit-animation-delay: 600ms;
-          animation-delay: 600ms;
+.card--2 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
-.card:nth-child(3) {
-  -webkit-animation-delay: 900ms;
-          animation-delay: 900ms;
+.card--3 {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+.card--4 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 @media screen and (min-width: 577px) {

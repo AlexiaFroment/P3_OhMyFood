@@ -28,9 +28,15 @@ $anim-delay: $anim-dur / $num-round;
   }
 }
 
+$num-card: 4;
+$anim-dur-card: 2s;
+$anim-delay-card: $anim-dur-card / $num-card;
 @keyframes fading {
   0% {
-    transform: translateY(50%);
+    transform: translateY(200%);
+    opacity: 0;
+  }
+  50% {
     opacity: 0;
   }
   100% {

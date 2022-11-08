@@ -203,10 +203,10 @@ main {
   margin: 8px auto;
   padding-left: 10px;
   box-shadow: $bs-card;
-  animation: fading 1500ms 1s both;
-  @for $i from 1 through 3 {
-    &:nth-child(#{$i}) {
-      animation-delay: 300ms * $i;
+  animation: fading $anim-dur 500ms backwards ease-in-out;
+  @for $i from 1 through $num-card {
+    &--#{$i} {
+      animation-delay: $anim-delay-card * $i;
     }
   }
 }
