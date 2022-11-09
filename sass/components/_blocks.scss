@@ -112,11 +112,19 @@
     -webkit-text-stroke: 1px black;
     color: transparent;
   }
-  &__icn:hover {
+  &__icn:active {
     background-image: $bg-btn;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-stroke: transparent;
+  }
+  @include desktop {
+    &__icn:hover {
+      background-image: $bg-btn;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-stroke: transparent;
+    }
   }
 }
 //*Entrées-Plats-Desserts*/

@@ -6,7 +6,7 @@
   background: $bg-section;
   margin: 15px 0 8px 0;
   position: relative;
-  &:hover {
+  &:active {
     cursor: pointer;
     background: #b381f02b;
   }
@@ -15,7 +15,7 @@
     color: rgb(117, 117, 117);
     padding-right: 15px;
   }
-  &:hover > .funcard__icn {
+  &:active > .funcard__icn {
     color: $cl-primary;
   }
 }
@@ -36,6 +36,13 @@
 @include desktop {
   .funcard {
     width: 40%;
+    &:hover {
+      cursor: pointer;
+      background: #b381f02b;
+    }
+    &:hover > .funcard__icn {
+      color: $cl-primary;
+    }
   }
 }
 .restcard {
@@ -73,7 +80,7 @@
     top: 10%;
     right: 7%;
   }
-  &__icn:hover {
+  &__icn:active {
     cursor: pointer;
     background-image: $bg-btn;
     background-clip: text;
@@ -126,6 +133,15 @@
       height: 280px;
     }
   }
+  .restcard__desc {
+    &__icn:hover {
+      cursor: pointer;
+      background-image: $bg-btn;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-stroke: transparent;
+    }
+  }
 }
 .card {
   @include hidden;
@@ -143,22 +159,17 @@
       animation-delay: $anim-delay-card * $i;
     }
   }
-}
-@include medium {
-  .card {
+  @include medium {
     height: 70px;
   }
-}
-@include tablet {
-  .card {
+  @include tablet {
     margin: 16px auto;
   }
-}
-@include desktop {
-  .card {
+  @include desktop {
     height: 80px;
   }
 }
+
 .card__info {
   @include hidden;
   @include flexCol;
@@ -169,18 +180,18 @@
   &__subtitle {
     @include hidden;
     font-size: 0.8rem;
+    @include medium {
+      font-size: 0.9rem;
+    }
+    @include tablet {
+      font-size: 0.8rem;
+    }
+    @include desktop {
+      font-size: 1rem;
+    }
   }
 }
-@include medium {
-  .card__info__subtitle {
-    font-size: 0.9rem;
-  }
-}
-@include desktop {
-  .card__info__subtitle {
-    font-size: 1rem;
-  }
-}
+
 .card__price {
   display: flex;
   align-items: flex-end;
@@ -203,11 +214,20 @@
     font-weight: 900;
     color: white;
   }
-  &:hover > .card__price__icn {
+  &:active > .card__price__icn {
     cursor: pointer;
     margin-right: 0px;
     & > i {
-      animation: icn_check 300ms ease-in-out;
+      animation: icn_check 200ms ease-in-out;
+    }
+  }
+  @include desktop {
+    &:hover > .card__price__icn {
+      cursor: pointer;
+      margin-right: 0px;
+      & > i {
+        animation: icn_check 200ms ease-in-out;
+      }
     }
   }
 }

@@ -59,7 +59,7 @@ $anim-delay-card: $anim-dur-card / $num-card;
 
 @keyframes icn_check {
   from {
-    transform: rotate(0deg);
+    transform: rotate(120deg);
   }
   to {
     transform: rotate(180deg);

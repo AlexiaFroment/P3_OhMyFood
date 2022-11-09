@@ -10,7 +10,7 @@
   box-shadow: $bs-btn;
   transform: scale(1);
   animation: transform 1s ease-in-out;
-  &:hover {
+  &:active {
     cursor: pointer;
     transform: scale(1.1);
     background: $bg-btn-dark;
@@ -19,6 +19,11 @@
     width: 270px;
     height: 52px;
     font-size: 1.25rem;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+      background: $bg-btn-dark;
+    }
   }
 }
 
