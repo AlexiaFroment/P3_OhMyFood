@@ -12,3 +12,34 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+
+//**Card*/
+@mixin card {
+  box-shadow: $bs-card;
+  border-radius: $br-card;
+}
+
+//**Breakpoints*/
+@mixin xs {
+  @media screen and (min-width: map-get($breakpoints, "xs")) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media screen and (min-width: map-get($breakpoints, "medium")) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: map-get($breakpoints, "tablet")) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: map-get($breakpoints, "desktop")) {
+    @content;
+  }
+}

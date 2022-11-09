@@ -22,3 +22,12 @@ $bs-btn: 2px 3px 3px #7c46bd;
 $br-round: 50px;
 $br-card: 15px;
 $br-demicard: 30px 30px 0 0;
+$br-demi-img: 15px 15px 0 0;
+
+//**Maps breakpoints/
+$breakpoints: (
+  "xs": 320px,
+  "medium": 577px,
+  "tablet": 768px,
+  "desktop": 992px,
+);

@@ -26,3 +26,45 @@ header {
     }
   }
 }
+//**Header_Menu**/
+.head {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 10% 80% 10%;
+  height: 70px;
+  &__icn {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  &__logo {
+    width: 180px;
+    height: 34px;
+    object-fit: contain;
+  }
+}
+@include tablet {
+  .head {
+    height: 90px;
+    &__icn {
+      font-size: 25px;
+    }
+    &__logo {
+      width: 234px;
+      height: 45px;
+    }
+  }
+}
+@include desktop {
+  .head {
+    height: 118px;
+    &__icn {
+      font-size: 30px;
+    }
+    &__logo {
+      width: 304px;
+      height: 59px;
+    }
+  }
+}
+

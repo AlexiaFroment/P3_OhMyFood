@@ -29,7 +29,7 @@ $anim-delay: $anim-dur / $num-round;
 }
 
 $num-card: 4;
-$anim-dur-card: 2s;
+$anim-dur-card: 3s;
 $anim-delay-card: $anim-dur-card / $num-card;
 @keyframes fading {
   0% {
@@ -37,7 +37,19 @@ $anim-delay-card: $anim-dur-card / $num-card;
     opacity: 0;
   }
   50% {
-    opacity: 0;
+    opacity: 0.1;
+  }
+  60% {
+    opacity: 0.2;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  80% {
+    opacity: 0.4;
+  }
+  90% {
+    opacity: 0.5;
   }
   100% {
     transform: translateY(0%);

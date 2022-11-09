@@ -1,0 +1,50 @@
+//**Loader**/
+.loader {
+  height: 100vh;
+  background-color: rgba($color: #fff, $alpha: 0.97);
+  @include flexCol;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  inset: 0;
+  animation: loader 1s 3s both;
+  transform-origin: -0% 100%;
+  &__patience {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  &__load {
+    width: 170px;
+    display: flex;
+    justify-content: space-evenly;
+    &__round {
+      height: 14px;
+      width: 14px;
+      padding: 3px;
+      border-radius: 50px;
+      animation: round $anim-dur backwards infinite ease-in-out
+        alternate-reverse;
+      @for $i from 1 through $num-round {
+        &--#{$i} {
+          animation-delay: $anim-delay * $i;
+        }
+      }
+    }
+    .items1 {
+      background: $cl-primary;
+    }
+    .items2 {
+      background: $cl-secondary;
+    }
+    .items3 {
+      background: $cl-tertiary;
+    }
+    .items4 {
+      background: $cl-secondary;
+    }
+    .items5 {
+      background: $cl-primary;
+    }
+  }
+}
