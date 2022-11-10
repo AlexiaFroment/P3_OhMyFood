@@ -65,3 +65,17 @@ $anim-delay-card: $anim-dur-card / $num-card;
     transform: rotate(180deg);
   }
 }
+@keyframes heart {
+  0% {
+    background-position: 0% 50%;
+    opacity: 0.1;
+  }
+  50% {
+    background-position: 100% 50%;
+    opacity: 0.3;
+  }
+  100% {
+    background-position: 0% 50%;
+    opacity: 1;
+  }
+}

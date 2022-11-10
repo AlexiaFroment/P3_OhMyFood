@@ -76,12 +76,13 @@
     top: 10%;
     right: 7%;
   }
-  &__icn:active {
+  &__icn:hover {
     cursor: pointer;
     background-image: $bg-btn;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-stroke: transparent;
+    animation: heart 1s ease-in-out;
   }
 }
 @include medium {
@@ -121,15 +122,6 @@
   .restcard {
     &__img1 {
       height: 280px;
-    }
-  }
-  .restcard__desc {
-    &__icn:hover {
-      cursor: pointer;
-      background-image: $bg-btn;
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-stroke: transparent;
     }
   }
 }
