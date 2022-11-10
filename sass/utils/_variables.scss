@@ -1,22 +1,23 @@
 //**Color**/
 $cl-primary: #9356dc;
-$cl-primary-dark: darken($cl-primary, 20%);
+$cl-primary-light: lighten($cl-primary, 4%);
 $cl-secondary: #ff79da;
-$cl-secondary-dark: darken($cl-secondary, 20%);
+$cl-secondary-light: lighten($cl-secondary, 4%);
 $cl-tertiary: #99e2d0;
 
 //**Background**/
 $bg-section: linear-gradient(#f3f3f3, #e6e6e6);
 $bg-btn: linear-gradient(to bottom right, $cl-secondary, $cl-primary);
-$bg-btn-dark: linear-gradient(
+$bg-btn-light: linear-gradient(
   to bottom right,
-  $cl-secondary-dark,
-  $cl-primary-dark
+  $cl-secondary-light,
+  $cl-primary-light
 );
 
 //**Box-shadows**/
 $bs-card: 3px 3px 5px rgb(164, 164, 164);
 $bs-btn: 2px 3px 3px #7c46bd;
+$bs-btn-more: 3px 5px 3px #7c46bd;
 
 //**Border-radius**/
 $br-round: 50px;

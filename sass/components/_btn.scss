@@ -12,8 +12,9 @@
   animation: transform 1s ease-in-out;
   &:active {
     cursor: pointer;
-    transform: scale(1.1);
-    background: $bg-btn-dark;
+    transform: scale(1.05);
+    background: $bg-btn-light;
+    box-shadow: $bs-btn-more;
   }
   @include desktop {
     width: 270px;
@@ -21,8 +22,9 @@
     font-size: 1.25rem;
     &:hover {
       cursor: pointer;
-      transform: scale(1.1);
-      background: $bg-btn-dark;
+      transform: scale(1.05);
+      background: $bg-btn-light;
+      box-shadow: $bs-btn-more;
     }
   }
 }

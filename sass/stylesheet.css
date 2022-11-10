@@ -15,7 +15,7 @@
 }
 @keyframes loader {
   0% {
-    transform: translate(100% 100%);
+    transform: translate(100%, 100%);
     opacity: 1;
     z-index: 1;
   }
@@ -23,7 +23,7 @@
     opacity: 0.1;
   }
   100% {
-    transform: translate(0% 100%);
+    transform: translate(0%, 100%);
     opacity: 0;
     z-index: -1;
   }
@@ -307,8 +307,9 @@ h4 {
 }
 .pres__btn:active, .cmd__btn:active {
   cursor: pointer;
-  transform: scale(1.1);
-  background: linear-gradient(to bottom right, #ff13be, #6023a9);
+  transform: scale(1.05);
+  background: linear-gradient(to bottom right, #ff8de0, #9e67e0);
+  box-shadow: 3px 5px 3px #7c46bd;
 }
 @media screen and (min-width: 992px) {
   .pres__btn, .cmd__btn {
@@ -318,8 +319,9 @@ h4 {
   }
   .pres__btn:hover, .cmd__btn:hover {
     cursor: pointer;
-    transform: scale(1.1);
-    background: linear-gradient(to bottom right, #ff13be, #6023a9);
+    transform: scale(1.05);
+    background: linear-gradient(to bottom right, #ff8de0, #9e67e0);
+    box-shadow: 3px 5px 3px #7c46bd;
   }
 }
 
