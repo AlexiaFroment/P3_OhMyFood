@@ -60,10 +60,6 @@
     object-fit: cover;
     object-position: center;
   }
-  &__img2 {
-    @extend .restcard__img1;
-    object-position: bottom;
-  }
 }
 .restcard__desc {
   padding-left: 12px;
@@ -92,9 +88,6 @@
   .restcard {
     height: 300px;
     &__img1 {
-      height: 230px;
-    }
-    &__img2 {
       height: 230px;
     }
   }
@@ -127,9 +120,6 @@
   }
   .restcard {
     &__img1 {
-      height: 280px;
-    }
-    &__img2 {
       height: 280px;
     }
   }
