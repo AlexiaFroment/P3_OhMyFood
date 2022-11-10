@@ -82,7 +82,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-stroke: transparent;
-    animation: heart 1s ease-in-out;
+    animation: heart 0.5s ease-in-out;
   }
 }
 @include medium {

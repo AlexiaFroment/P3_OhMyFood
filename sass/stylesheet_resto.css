@@ -442,8 +442,8 @@ h4 {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-stroke: transparent;
-  -webkit-animation: heart 1s ease-in-out;
-          animation: heart 1s ease-in-out;
+  -webkit-animation: heart 0.5s ease-in-out;
+          animation: heart 0.5s ease-in-out;
 }
 
 @media screen and (min-width: 577px) {
@@ -752,8 +752,8 @@ h4 {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-stroke: transparent;
-  -webkit-animation: heart 1s ease-in-out;
-          animation: heart 1s ease-in-out;
+  -webkit-animation: heart 0.5s ease-in-out;
+          animation: heart 0.5s ease-in-out;
 }
 
 .menu {
