@@ -12,7 +12,7 @@ $anim-delay: $anim-dur / $num-round;
     opacity: 0.1;
   }
   100% {
-    transform: translate(0%, 100%);
+    transform: translate(0% 100%);
     opacity: 0;
     z-index: -1;
   }
