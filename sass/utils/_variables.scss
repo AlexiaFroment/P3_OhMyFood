@@ -6,9 +6,10 @@ $cl-secondary: #ff79da;
 $cl-secondary-light: lighten($cl-secondary, 4%);
 $cl-secondary-dark: darken($cl-secondary, 20%);
 $cl-tertiary: #99e2d0;
+$cl-font-bis: #4a4a4a;
 
 //**Background**/
-$bg-section: linear-gradient(#f3f3f3, #e6e6e6);
+$bg-section: linear-gradient(#f9f9f9, #f0f0f0);
 $bg-btn: linear-gradient(to bottom right, $cl-secondary, $cl-primary);
 $bg-btn-light: linear-gradient(
   to bottom right,
